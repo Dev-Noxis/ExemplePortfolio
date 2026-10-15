@@ -1,0 +1,18 @@
+body {
+    background-color: #041821;
+    border: 0;
+}
+
+header h1{
+    color: white
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
