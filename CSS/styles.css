@@ -1,6 +1,21 @@
+
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body {
     background-color: #041821;
-    border: 0;
+    
 }
 
 header h1{
@@ -14,5 +29,51 @@ header h1{
     border-bottom-color: gray;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    
 }
 
+main h1{
+    margin: 2% 10% 2% 10%;
+}
+
+main p{
+    margin: 0% 10% 1% 10%;
+}
+
+.vert {
+    color: #18d89f;
+}
+
+.Bloc-Photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+#selected {
+    background-color: #18d89f;
+    padding: 0.2rem 0.5rem;
+}
+
+.Photos {
+    margin: 0 15% 0 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+    color: grey;
+}
+
+footer h4 {
+    padding-top: 1rem;
+    margin-bottom: 0rem;
+}

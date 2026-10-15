@@ -1,67 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nolann JEAN</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <script src="https://kit.fontawesome.com/f36dc3e459.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f36dc3e459.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div id="Nom">
-                <h1>Nolann JEAN</h1>
-            </div>
-            <div class="Réseaux">
-                <a href="http://facebook.com" >
-                    <span class="fa-brands fa-facebook fa-xl" style="color: white; "></span>
-                </a>
-                <a href="http://instagram.com" >
-                    <span class="fa-brands fa-instagram fa-xl" style="color: white;"></span>
-                </a>
-                <a href="http://linkedin.com" >
-                    <span class="fa-brands fa-linkedin fa-xl" style="color: white;"></span>
-                </a>
-                <span class="fa-solid fa-circle-half-stroke fa-xl" style="color: white;"></span>
-            </div>
+      <div class="header">
+        <div id="Nom">
+          <h1 class="yeseva-one-regular">
+            Nolann JEAN<span class="vert">.</span>
+          </h1>
         </div>
+        <div class="Réseaux">
+          <a href="http://facebook.com">
+            <span
+              class="fa-brands fa-facebook fa-xl"
+              style="color: white"
+            ></span>
+          </a>
+          <a href="http://instagram.com">
+            <span
+              class="fa-brands fa-instagram fa-xl"
+              style="color: white"
+            ></span>
+          </a>
+          <a href="http://linkedin.com">
+            <span
+              class="fa-brands fa-linkedin fa-xl"
+              style="color: white"
+            ></span>
+          </a>
+          <span
+            class="fa-solid fa-circle-half-stroke fa-xl"
+            style="color: white"
+          ></span>
+        </div>
+      </div>
     </header>
-    
-        <h1>Hello, <br> Je suis photographe d'art, <br> créatif & engagé</h1>
 
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iste commodi repellat voluptates ipsum nemo neque voluptatem, cum deleniti tempora nihil quibusdam quod corrupti officia. Fugit, eaque. Inventore, eligendi? Earum?</p>
-    </header>
     <main>
-        <div class="Bloc-Photos">
-            <h3>Nature</h3>
-            <h3>Portrait</h3>
-            <h3>Art</h3>
-            <h3>Urbain</h3>
-            <h3>Animaux</h3>
-            <div class="Photos">
-                <img src="https://picsum.photos/200?random=1" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=2" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=3" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=4" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=5" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=6" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=7" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=8" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=9" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=10" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=11" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=12" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=13" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=14" alt="Photos réalisé par moi">
-                <img src="https://picsum.photos/200?random=15" alt="Photos réalisé par moi">
-            </div>
-        </div>
+      <h1 class="yeseva-one-regular">
+        Hello, <br />
+        Je suis photographe d'art, <br />
+        <span class="vert">créatif & engagé</span>
+      </h1>
+
+      <p class="montserrat-normal">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam iste
+        commodi repellat voluptates ipsum nemo neque voluptatem, cum deleniti
+        tempora nihil quibusdam quod corrupti officia. Fugit, eaque. Inventore,
+        eligendi? Earum?
+      </p>
+
+      <div class="Bloc-Photos">
+        <h3 class="montserrat-normal">Nature</h3>
+        <h3 class="montserrat-normal" id="selected">Portrait</h3>
+        <h3 class="montserrat-normal">Art</h3>
+        <h3 class="montserrat-normal">Urbain</h3>
+        <h3 class="montserrat-normal">Animaux</h3>
+      </div>
+
+      <div class="Photos">
+        <img
+          src="https://picsum.photos/200?random=1"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=2"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=3"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=4"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=5"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=6"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=7"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=8"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=9"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=10"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=11"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=12"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=13"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=14"
+          alt="Photos réalisé par moi"
+        />
+        <img
+          src="https://picsum.photos/200?random=15"
+          alt="Photos réalisé par moi"
+        />
+      </div>
     </main>
 
     <footer>
-        <h4>©2026 Nolann JEAN</h4>
-        <p>Exercice HTML - CSS</p>
+      <h4 class="yeseva-one-regular">©2026 Nolann JEAN</h4>
+      <p class="yeseva-one-regular">Exercice HTML - CSS</p>
     </footer>
-</body>
+  </body>
 </html>
