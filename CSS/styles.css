@@ -52,11 +52,12 @@ main p {
 }
 
 .Photos {
-  margin: 0 15% 0 15%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  max-width: 815px;
+  grid-template-columns: repeat(auto-fill, 200px);
   gap: 5px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 footer {
