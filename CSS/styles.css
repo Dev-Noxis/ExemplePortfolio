@@ -1,7 +1,7 @@
 .montserrat-normal {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 450;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -11,13 +11,15 @@
   font-style: normal;
 }
 
+.white-color {
+  color: white;
+}
+
 body {
   background-color: #041821;
 }
 
-header h1 {
-  color: white;
-}
+/* Header avec Flexbox */
 
 .header {
   display: flex;
@@ -28,11 +30,17 @@ header h1 {
   border-bottom-width: 1px;
 }
 
+.reseaux {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
 main h1 {
   margin: 2% 10% 2% 10%;
 }
 
-main p {
+#description {
   margin: 0% 10% 1% 10%;
 }
 
@@ -43,6 +51,7 @@ main p {
 .Bloc-Photos {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -51,13 +60,23 @@ main p {
   padding: 0.2rem 0.5rem;
 }
 
+/* Galerie avec CSS Grid basé sur  l'interface mobile principalement */
+
 .Photos {
   display: grid;
   max-width: 815px;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5px;
   justify-content: center;
   margin: 0 auto;
+}
+.Photos img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.Photos img:nth-child(n + 10) {
+  display: none;
 }
 
 footer {
@@ -66,9 +85,21 @@ footer {
   align-items: center;
   font-size: 0.7rem;
   color: grey;
-}
-
-footer h4 {
   padding-top: 1rem;
   margin-bottom: 0rem;
+}
+
+@media (min-width: 768px) {
+  .Photos {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .Photos img:nth-child(n + 10) {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Photos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
